@@ -526,17 +526,106 @@
 // console.log(typeof(person));
 // console.log(person.age);
 
-const animal={
-species:'dog',
-gender:'male',
-age:4
+// const animal={
+// species:'dog',
+// gender:'male',
+// age:4
 
-};
+// };
 
-animal.age=5;
-animal.species='cat';
+// animal.age=5;
+// animal.species='cat';
 
-console.log(animal);
+// console.log(animal);
+
+//const button=document.querySelector('button');
+
+//  button.addEventListener('click',  ()=>{
+//      const li=document.createElement('li');
+//      li.textContent='something new to do';
+//     // ul.append(li);
+//      ul.prepend(li);
+//     // ul.innerHTML+='<li>something new</li>';
+//  });
+
+
+// const ul=document.querySelector('ul');
+//ul.remove();
+// const items=document.querySelectorAll('li');
+// items.forEach(item=>{
+
+//     item.addEventListener('click',(event)=>{
+//         console.log('event in li');
+//         event.stopPropagation();
+//     // alert('item clicked');
+//     //event.target.style.textDecoration='line-through';
+//      event.target.remove();
+//     } )
+// });
+
+// ul.addEventListener('click', event=>{
+
+//    if(event.target.tagName==='LI'){
+// event.target.remove();
+
+//    }
+// })
+
+// const copy=document.querySelector('.copy-me');
+
+// copy.addEventListener('copy', ()=>{
+
+//     console.log("");
+// }
+// )
+
+// const box=document.querySelector('.box');
+
+// box.addEventListener('mousemove', event=>{
+
+//   //console.log(event.offsetX, event.offsetY);
+//   box.textContent=`x pos ${event.offsetX} y pos ${event.offsetY}`;
+// });
+
+
+// document.addEventListener('wheel', event=>{
+//   console.log(event.pageX, event.pageY);
+ 
+    
+// });
+
+const button=document.querySelector('button');
+const popup=document.querySelector('.popup-wrapper');
+
+const close=document.querySelector('.popup-close');
+
+
+close.addEventListener('click', event=>{
+
+  popup.style.display='none';
+
+});
+
+button.addEventListener('click', event=>{
+   popup.style.display='block';
+
+
+} );
+
+popup.addEventListener('click', event=>{
+    popup.style.display='none';
+    
+})
+
+
+
+
+
+
+
+
+
+
 
 
 
